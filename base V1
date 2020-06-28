@@ -1,0 +1,36 @@
+
+
+--
+-- Database: `oes`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_admin`
+--
+
+CREATE TABLE `tbl_admin` (
+  `email` varchar(255) NOT NULL,
+  `login` varchar(255) NOT NULL,
+  `role` varchar(255) NOT NULL DEFAULT 'admin',
+  `avator` varchar(255) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_admin`
+--
+
+INSERT INTO `tbl_admin` (`email`, `login`, `role`, `avator`) VALUES
+('mdkattass@gmail.com', '$2y$10$zmZvlObWgbSh6OlNDYiR.eEt8nBKjkJJdFN7Y/tWxF8gErP/M4v8m', 'admin', '45083.png'),
+('abdelmoula-bouchareb@hotmail.com', '12345', 'admin', '');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `tbl_admin`
+--
+ALTER TABLE `tbl_admin`
+  ADD PRIMARY KEY (`email`);
